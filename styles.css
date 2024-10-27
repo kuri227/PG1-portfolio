@@ -31,6 +31,17 @@ nav ul li a {
     list-style: none;
 }
 
+
+.quiz.image {
+    text-align: center; /* 画像とキャプションを中央揃えにする */
+    margin: 15px 0; /* 画像の上下にスペースを追加 */
+}
+
+img {
+    max-width: 100%; /* 画像が画面幅を超えないようにする */
+    height: auto; /* 高さを自動調整 */
+}
+
 section {
     padding: 20px;
     margin: 20px;
