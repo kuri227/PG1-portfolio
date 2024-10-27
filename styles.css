@@ -32,7 +32,7 @@ nav ul li a {
 }
 
 
-.quiz.image {
+figure {
     text-align: center; /* 画像とキャプションを中央揃えにする */
     margin: 15px 0; /* 画像の上下にスペースを追加 */
 }
@@ -40,6 +40,15 @@ nav ul li a {
 img {
     max-width: 100%; /* 画像が画面幅を超えないようにする */
     height: auto; /* 高さを自動調整 */
+}
+
+
+.project {
+    margin: 20px 0; /* 各プロジェクト間にスペースを追加 */
+    padding: 15px;
+    border: 1px solid #e0e0e0; /* プロジェクトボックスに境界線を追加 */
+    border-radius: 8px; /* 角を丸くする */
+    background-color: #f9f9f9; /* 背景色を追加 */
 }
 
 section {
