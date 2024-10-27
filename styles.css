@@ -1,0 +1,54 @@
+body {
+    font-family: M PLUS 1p;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* 明るい青の背景 */
+}
+
+header {
+    background-color: #1e90ff; /* ダークブルーのヘッダー */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#about ul {
+    list-style: none;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    background-color: #ffffff; /* 白のセクション */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* 軽い影 */
+}
+
+h2 {
+    color: #1e90ff; /* セクション見出しの色 */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1e90ff; /* ダークブルーのフッター */
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
