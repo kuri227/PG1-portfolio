@@ -42,6 +42,41 @@ img {
     height: auto; /* 高さを自動調整 */
 }
 
+.container {
+    overflow: auto; /* フロートをクリアするために追加 */
+    margin: 20px 0; /* 各プロジェクト間にスペースを追加 */
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+}
+
+.container .caption {
+    font-size: 30px;
+    line-height: 1.5;
+    display: flex; /* Flexboxを使用 */
+    align-items: flex-start; /* 上揃えにする */
+}
+
+.container p{
+    font-size: 15px;
+}
+
+.container img {
+    float: left; /* 画像を左に浮かせる */
+    margin-right: 20px; /* 画像とテキストの間にスペースを追加 */
+    height: auto;
+    object-fit: cover;
+    max-height: 200px;
+    width: 160px; /* 画像の最大幅 */
+    margin-right: 20px;
+    display: flex; /* Flexboxを使用 */
+    align-items: flex-start; /* 上揃えにする */
+}
+
+.container .language .Arduino-image {
+    width: 170px;
+    height: 180px;
+}
+
 
 .project {
     margin: 20px 0; /* 各プロジェクト間にスペースを追加 */
