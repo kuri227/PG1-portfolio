@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Sawarabi+Mincho');
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
 body {
-    font-family: Arial, sans-serif;
+    /* font-family:  'Sawarabi Mincho', sans-serif; */
+    /* font-family: 'M PLUS Rounded 1c', sans-serif;; */
+    font-family: 'Noto Sans JP', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f0f8ff; /* 明るい青の背景 */
@@ -27,8 +32,15 @@ nav ul li a {
     text-decoration: none;
 }
 
-#about ul {
+#about ul li {
     list-style: none;
+    font-size: large;
+}
+
+#about ul p{
+    font-size: 15px;
+    line-height: 0%;
+    text-indent: 1em;
 }
 
 
@@ -72,9 +84,14 @@ img {
     align-items: flex-start; /* 上揃えにする */
 }
 
-.container .language .Arduino-image {
+#Arduino-image {
     width: 170px;
     height: 180px;
+}
+
+#HTML-CSS-image {
+    width: 170px;
+    height: 140px;
 }
 
 
