@@ -1,24 +1,30 @@
-@import url('https://fonts.googleapis.com/css?family=Sawarabi+Mincho');
-@import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c');
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
 body {
-    /* font-family:  'Sawarabi Mincho', sans-serif; */
-    /* font-family: 'M PLUS Rounded 1c', sans-serif;; */
     font-family: 'Noto Sans JP', sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f0f8ff; /* 明るい青の背景 */
+    color: #333;
+    background-color: #f8f9fa;
 }
 
-header {
-    background-color: #1e90ff; /* ダークブルーのヘッダー */
-    color: white;
-    padding: 20px;
+h1 {
+    font-family: '851マカポップ';
     text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    background-color: #0073e6;
+    color: white;
+    /* font-size: xx-large; */
+}
+
+nav {
+    background-color: #e6f0ff;
+    text-align: center;
+    padding: 10px 0;
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
 }
 
@@ -28,99 +34,140 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
     text-decoration: none;
-}
-
-#about ul li {
-    list-style: none;
-    font-size: large;
-}
-
-#about ul p{
-    font-size: 15px;
-    line-height: 0%;
-    text-indent: 1em;
-}
-
-
-figure {
-    text-align: center; /* 画像とキャプションを中央揃えにする */
-    margin: 15px 0; /* 画像の上下にスペースを追加 */
-}
-
-img {
-    max-width: 100%; /* 画像が画面幅を超えないようにする */
-    height: auto; /* 高さを自動調整 */
-}
-
-.container {
-    overflow: auto; /* フロートをクリアするために追加 */
-    margin: 20px 0; /* 各プロジェクト間にスペースを追加 */
-    padding: 15px;
-    border: 1px solid #e0e0e0;
-}
-
-.container .caption {
-    font-size: 30px;
-    line-height: 1.5;
-    display: flex; /* Flexboxを使用 */
-    align-items: flex-start; /* 上揃えにする */
-}
-
-.container p{
-    font-size: 15px;
-}
-
-.container img {
-    float: left; /* 画像を左に浮かせる */
-    margin-right: 20px; /* 画像とテキストの間にスペースを追加 */
-    height: auto;
-    object-fit: cover;
-    max-height: 200px;
-    width: 160px; /* 画像の最大幅 */
-    margin-right: 20px;
-    display: flex; /* Flexboxを使用 */
-    align-items: flex-start; /* 上揃えにする */
-}
-
-#Arduino-image {
-    width: 170px;
-    height: 180px;
-}
-
-#HTML-CSS-image {
-    width: 170px;
-    height: 140px;
-}
-
-
-.project {
-    margin: 20px 0; /* 各プロジェクト間にスペースを追加 */
-    padding: 15px;
-    border: 1px solid #e0e0e0; /* プロジェクトボックスに境界線を追加 */
-    border-radius: 8px; /* 角を丸くする */
-    background-color: #f9f9f9; /* 背景色を追加 */
+    color: #0073e6;
 }
 
 section {
     padding: 20px;
-    margin: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section#about,
+section#career,
+section#skill,
+section#products,
+section#contact {
+    margin-top: 20px;
+    border-bottom: 1px solid #ccc;
+    background: #fff;
+    padding: 20px;
     border-radius: 5px;
-    background-color: #ffffff; /* 白のセクション */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* 軽い影 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-    color: #1e90ff; /* セクション見出しの色 */
+    color: #0073e6;
+}
+
+.timeline {
+    position: relative;
+    margin: 20px 0;
+    padding: 20px 0;
+    /* border-left: 3px solid #0073e6; */
+}
+
+.event {
+    position: relative;
+    margin-left: 20px; /* 適切なマージンを設定 */
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.event::before {
+    content: '';
+    position: absolute;
+    left: -14px; /* ドットを調整 */
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 3px solid #0073e6;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.event::after {
+    content: '';
+    position: absolute;
+    left: -3px; /* ドットの中心を貫くように */
+    top: 20px;
+    bottom: 0;
+    width: 3px;
+    background-color: #0073e6;
+    z-index: 0;
+}
+
+.event:last-child::after {
+    display: none; /* 最後のイベントの線を消す */
+}
+
+.event .date {
+    font-weight: bold;
+    /* color: #0073e6; */
+    margin-bottom: 5px;
+}
+
+.event .description {
+    margin: 0;
+    color: #555;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #e6f0ff;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.container .language {
+    flex: 0 0 160px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.container img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.container #Arduino img {
+    height:120px;
+    width:150px
+}
+.container .caption {
+    font-weight: bold;
+}
+
+.container p {
+    flex-grow: 1;
+}
+
+#quiz-image{
+    width: auto;
+    height: auto;
+    border: 2px solid #000;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #1e90ff; /* ダークブルーのフッター */
+    background-color: #0073e6;
     color: white;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
 }
