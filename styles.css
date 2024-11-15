@@ -153,15 +153,51 @@ h2 {
 }
 
 #quiz-image{
-    width: auto;
-    height: auto;
-    border: 2px solid #000;
-    border-radius: 10px;
+   /* width: auto; */
+    /* height: auto;w */
+    /* border: 2px solid #000; */
+    /* border-radius: 10px; */
     margin-top: 10px;
     margin-bottom: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 100%;  /* 画像の幅を親要素に合わせる */
+    height: auto;     /* 高さを自動調整 */
+    border: 2px solid #333; /* 境界線を追加 */
+    border-radius: 8px; /* 角を丸くする */
+    display: block; /* 画像をブロック要素にする */
+    margin: 20px auto; /* 上下のマージンを設定し、中央寄せ */
+}
+
+#unity_running{
+    max-width: 100%;  /* 画像の幅を親要素に合わせる */
+    height: auto;     /* 高さを自動調整 */
+    border: 2px solid #333; /* 境界線を追加 */
+    border-radius: 8px; /* 角を丸くする */
+    display: block; /* 画像をブロック要素にする */
+    margin: 20px auto; /* 上下のマージンを設定し、中央寄せ */
+}
+
+#handmade_gun{
+    max-width: 100%;  /* 画像の幅を親要素に合わせる */
+    height: auto;     /* 高さを自動調整 */
+    border: 2px solid #333; /* 境界線を追加 */
+    border-radius: 8px; /* 角を丸くする */
+    display: block; /* 画像をブロック要素にする */
+    margin: 20px auto; /* 上下のマージンを設定し、中央寄せ */
+}
+
+figure {
+    text-align: center; /* 画像と注釈を中央揃えにする */
+    margin: 20px 0; /* 上下のマージンを追加 */
+}
+
+figcaption {
+    margin-top: 10px; /* 注釈と画像の間にマージンを追加 */
+    align-items: center;
+    justify-content: center;
+    
 }
 
 footer {
