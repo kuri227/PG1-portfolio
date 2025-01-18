@@ -15,8 +15,8 @@
             <ul>
                 <li><a href="#about">自己紹介</a></li>
                 <li><a href="#career">経歴</a></li>
-                <li><a href="#products">プロダクト</a></li>
                 <li><a href="#skill">スキル</a></li>
+                <li><a href="#products">プロダクト</a></li>
                 <li><a href="#contact">連絡先</a></li>
             </ul>
         </nav>
@@ -52,17 +52,22 @@
             <div class="event">
                 <div class="dot"></div>
                 <div class="date">2024年5月</div>
-                <div class="description">総合課題実習1のためのプロダクト、シューティングゲームの作成開始</div>
+                <div class="description">Unityを使用したシューティングゲームの共同開発を開始</div>
             </div>
             <div class="event">
                 <div class="dot"></div>
                 <div class="date">2024年7月</div>
-                <div class="description">プログラミング1の自由課題としてクイズゲームを作成</div>
+                <div class="description">Pythonを用いてクイズゲームを作成</div>
             </div>
             <div class="event">
                 <div class="dot"></div>
                 <div class="date">2024年11月</div>
-                <div class="description">高専祭にシューティングゲームを展示</div>
+                <div class="description">高専祭に開発したシューティングゲームを展示</div>
+            </div>
+            <div class="event">
+                <div class="dot"></div>
+                <div class="date">2025年1月</div>
+                <div class="description">Pythonを用いた「ボールを撃ち落とすゲーム」の開発</div>
             </div>
             
             <!-- 他の経歴も追加可能 -->
@@ -87,7 +92,8 @@
                 <img src="images/Arduino.jpeg" alt="Arduino">
                 <p class="caption">Arduino</p>
             </div>
-            <p>高専の授業で使用しました。また、総合課題実習1でもこの言語を使用してプログラムを書いています。<a href="#HackU">シューティングゲーム</a><br>
+            <p>高専の授業で使用しました。<br>
+                <a href="#shootinggame">シューティングゲーム</a>の開発時、マイコンのプログラムにこの言語を用いました。<br>
                 授業レベルの知識を保有しています。
             </p>
         </div>
@@ -104,32 +110,75 @@
     </section>
 
     <section id="products">
-        <h2 id="HackU">プロダクト</h2>
-        <h3>クイズゲーム</h3>
-        <p>プログラミング1の授業の自由課題として、クイズゲームを作成しました。Pythonで簡単なクイズを出題し、ユーザーの回答を評価する仕組みを実装しています。<br><a href="https://colab.research.google.com/drive/1coHaIhKgrtZ5fRi85KWdHDMBiaK9wUsA?usp=sharing">クイズゲーム</a>　実行はこちら<br>
-        <img src="images/quiz.jpeg" alt="クイズゲーム実行例" id="quiz-image"><br></p>
+        <h2>プロダクト</h2>
+            <div id="quizgame">
+                <h3>クイズゲーム</h3>
+                <p>Pythonを用いてクイズゲームを作成しました。<br>
+                    簡単なクイズを出題し、ユーザーの回答を評価する仕組みを実装しています。<br><a href="https://colab.research.google.com/drive/1coHaIhKgrtZ5fRi85KWdHDMBiaK9wUsA?usp=sharing">クイズゲーム</a>  実行はこちらから<br>
+                <img src="images/quiz.jpeg" alt="クイズゲーム実行例" id="quiz-image"><br></p>
+            </div>
 
-        <h3>シューティングゲーム</h3>
-        <p>ジャイロ機能を搭載した手作りのコントローラーを動かすことで、実際にプレイができるシューティングゲームを作成しました。
-            ゲーム本体はUnityで作成しており、マイコンから送信したジャイロセンサーの値でカーソルを動かす機能を実装しています。<br>
-            <a href="https://github.com/create-alt/HackU_new.git">シューティングゲーム</a>Unityのコードはこちら<br>
-            <figure>    
-                <img src="images/unity_running.png" alt="ゲームプレイ画面" id="unity_running">
-            <figcaption>作成したゲームのプレイ画面</figcaption>
-            </figure>
-            私は、Arduino言語を使用して、コントローラに搭載するマイコンにデータの取得・成形・PCへのシリアル通信、およびBluetooth通信を行う機能を実装しました。
-            また、班員と協力して100均で購入した水鉄砲を分解して、マイコンを搭載させることで、ゲームに使用するコントローラーを自作しました。<br>
-            <a href="https://github.com/kuri227/hackU.git">マイコンのプログラム</a>はこちら</a></p>
-            <figure>
-                <image src="images/handmade_gun.png" alt="自作コントローラー" id="handmade_gun">
+            <div id="shooting-game">
+                <h3>シューティングゲーム</h3>
+                <p>ジャイロ機能を搭載させた手作りのコントローラーを動かすことで、<br>
+                カーソルを動かすことができるシューティングゲームを友人たちと共同開発しました。<br>
+                ゲーム本体はUnityで作成しています。<br>
+                私はジャイロ機能のためのマイコンのプログラムを作成に携わりました。<br>
+                </p>
+    
+                <a href="https://github.com/create-alt/HackU_new.git">シューティングゲーム</a>  Unityのプログラムはこちらから<br>
+                <figure>    
+                    <img src="images/unity_running.png" alt="ゲームプレイ画面" id="unity_running">
+                <figcaption>作成したゲームのプレイ画面</figcaption>
+                </figure>
+                私は、Arduino言語を使用して、コントローラに搭載するマイコンに、<br>
+                データの取得・成形・PCへのシリアル通信、およびBluetooth通信を行う機能を実装しました。<br>
+                また、100均で購入した水鉄砲を分解して、マイコンを搭載させることで、ゲームに使用するコントローラーを自作しました。<br>
+                <a href="https://github.com/kuri227/hackU.git">マイコンのプログラム</a>はこちらから</a></p>
+                <figure>
+                    <image src="images/handmade_gun.png" alt="自作コントローラー" id="handmade_gun">
                 <figcaption>自作したコントローラの写真</figcaption>
-            </figure>
+                </figure>
+            </div>
+
+            <div id="shooting_ball">
+                <h3>ボールを撃ち落とすゲーム</h3>
+                <p>Pythonのライブラリであるpygameを用いて、飛んでくるボールを弓矢で撃ち落とすゲームを作成しました。
+                    プレイヤーは地面上にある弓を左矢印キー、右矢印キーで左右に操作することができます。<br>
+                    また、スペースキーを押下することで矢を発射することができます。<br>
+                    <br>
+                    ゲームがスタートすると、一定間隔でボールが飛んできます。<br>
+                    プレイヤーにはHPが存在し、ボールに接触するとHPが減少します。HPが0になるとゲームオーバーです。<br>
+                    また、ボールにもHPが存在します。
+                    矢をボールに当てることでボールのHPを減らすことができ、ボールのHPを0にすることでボールを消すことができます。<br>
+                    ボールに矢を当てる、もしくはボールのHPを0にすることで一定数のスコアを獲得することができます。<br>
+                    <br>
+                    出現したボールをすべて消し、かつ、60秒間生き残れば、ゲームクリアとなります。<br>
+                    <a href="https://github.com/kuri227/Shotting-Pygame.git">ボールを撃ち落とすゲーム</a>はこちらから</a></p>
+                </p>
+                <div class="slider">
+                    <div class="slides">
+                        <div class="slide"><img src="images/shooting_ball_start.png" alt="スタート画面"></div>
+                        <div class="slide"><img src="images/shooting_game_play.png" alt="プレイ画面"></div>
+                        <div class="slide"><img src="images/shooting_game_clear.png" alt="クリア画面"></div>
+                        <div class="slide"><img src="images/shooting_game_gameover.png" alt="ゲームオーバー画面"></div>
+                    </div>
+                    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                    <button class="next" onclick="moveSlide(1)">&#10095;</button>
+                </div>
+                <figcaption>「ボールを撃ち落とすゲーム」の実行例</figcaption>
+                
+                <script src="script.js"></script>
+
+                
+
+
 
     </section>
 
     <section id="contact">
         <h2>連絡先</h2>
-        <p>質問やフィードバックがある場合は、以下の連絡先までご連絡をお願いいたします。
+        <p>質問やフィードバックがある場合は、以下の連絡先までご連絡をお願いいたします。<br>
             お手数ですが、ご連絡の際は☆マークを@マークに変更をお願いいたします。</p>
         <ul>
             <li>学校用メール: rg23136w☆st.omu.ac.jp</li>

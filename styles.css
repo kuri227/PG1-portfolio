@@ -152,6 +152,11 @@ h2 {
     flex-grow: 1;
 }
 
+#products div {
+
+    border-bottom: 1px solid #ccc;
+}
+
 #quiz-image{
    /* width: auto; */
     /* height: auto;w */
@@ -171,7 +176,7 @@ h2 {
 }
 
 #unity_running{
-    max-width: 100%;  /* 画像の幅を親要素に合わせる */
+    max-width: 75%;  /* 画像の幅を親要素に合わせる */
     height: auto;     /* 高さを自動調整 */
     border: 2px solid #333; /* 境界線を追加 */
     border-radius: 8px; /* 角を丸くする */
@@ -180,12 +185,55 @@ h2 {
 }
 
 #handmade_gun{
-    max-width: 100%;  /* 画像の幅を親要素に合わせる */
-    height: auto;     /* 高さを自動調整 */
+    max-width: 75%;  /* 画像の幅を親要素に合わせる */
+    max-height: 100%;     /* 高さを自動調整 */
     border: 2px solid #333; /* 境界線を追加 */
     border-radius: 8px; /* 角を丸くする */
     display: block; /* 画像をブロック要素にする */
     margin: 20px auto; /* 上下のマージンを設定し、中央寄せ */
+}
+
+.slider {
+    border: 2px solid #333; /* 境界線を追加 */
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* 角を丸くする */
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
 }
 
 figure {
@@ -194,9 +242,11 @@ figure {
 }
 
 figcaption {
+    text-align: center;
     margin-top: 10px; /* 注釈と画像の間にマージンを追加 */
     align-items: center;
     justify-content: center;
+    margin-bottom: 10px;
     
 }
 
