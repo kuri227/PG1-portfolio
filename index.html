@@ -27,7 +27,7 @@
         <ul>
             <li>名前 : kuri(17歳)</li>
             <li>所属 : 高専2年</li>
-            <li>部活動 :硬式テニス部 , MAEDA部（前田部）（非公認団体）</li>
+            <li>部活動 : MAEDA部</li>
         </ul>
     </section>
 
@@ -67,7 +67,12 @@
             <div class="event">
                 <div class="dot"></div>
                 <div class="date">2025年1月</div>
-                <div class="description">Pythonを用いた「ボールを撃ち落とすゲーム」の開発</div>
+                <div class="description">Pygameを用いた「ボールを撃ち落とすゲーム」の開発</div>
+            </div>
+            <div class="event">
+                <div class="dot"></div>
+                <div class="date">2025年2月</div>
+                <div class="description">PySideを用いた「画像ビューワー」の開発</div>
             </div>
             
             <!-- 他の経歴も追加可能 -->
@@ -79,7 +84,7 @@
         <h3>使用経験のある言語</h3>
         <div class="container">
             <div class="language" id="Python">
-                <img src="images/python.jpeg" alt="Python" id="python-image">
+                <img src="images/download/python.jpeg" alt="Python" id="python-image">
                 <p class="caption">Python</p>
             </div>
             <p>一番最初に触れたプログラミング言語で、プログラミング1の授業で学んでいます。
@@ -89,17 +94,17 @@
         </div>
         <div class="container">
             <div class="language" id="Arduino">
-                <img src="images/Arduino.jpeg" alt="Arduino">
+                <img src="images/download/Arduino.jpeg" alt="Arduino">
                 <p class="caption">Arduino</p>
             </div>
             <p>高専の授業で使用しました。<br>
-                <a href="#shootinggame">シューティングゲーム</a>の開発時、マイコンのプログラムにこの言語を用いました。<br>
+                <a href="#shooting-game">シューティングゲーム</a>の開発時、マイコンのプログラムにこの言語を用いました。<br>
                 授業レベルの知識を保有しています。
             </p>
         </div>
         <div class="container">
             <div class="language" id="HTML">
-                <img src="images/HTML-and-CSS.jpg" alt="HTML/CSS" id="HTML-CSS-image">
+                <img src="images/download/HTML-and-CSS.jpg" alt="HTML/CSS" id="HTML-CSS-image">
                 <p class="caption">HTML/CSS</p>
             </div>
             <p>Pythonと同じく、プログラミング1の授業で学んでいます。<br>
@@ -115,7 +120,7 @@
                 <h3>クイズゲーム</h3>
                 <p>Pythonを用いてクイズゲームを作成しました。<br>
                     簡単なクイズを出題し、ユーザーの回答を評価する仕組みを実装しています。<br><a href="https://colab.research.google.com/drive/1coHaIhKgrtZ5fRi85KWdHDMBiaK9wUsA?usp=sharing">クイズゲーム</a>  実行はこちらから<br>
-                <img src="images/quiz.jpeg" alt="クイズゲーム実行例" id="quiz-image"><br></p>
+                <img src="images/quiz_img/quiz.jpeg" alt="クイズゲーム実行例" id="quiz-image"><br></p>
             </div>
 
             <div id="shooting-game">
@@ -128,7 +133,7 @@
     
                 <a href="https://github.com/create-alt/HackU_new.git">シューティングゲーム</a>  Unityのプログラムはこちらから<br>
                 <figure>    
-                    <img src="images/unity_running.png" alt="ゲームプレイ画面" id="unity_running">
+                    <img src="images/gun_img/unity_running.png" alt="ゲームプレイ画面" id="unity_running">
                 <figcaption>作成したゲームのプレイ画面</figcaption>
                 </figure>
                 私は、Arduino言語を使用して、コントローラに搭載するマイコンに、<br>
@@ -136,7 +141,7 @@
                 また、100均で購入した水鉄砲を分解して、マイコンを搭載させることで、ゲームに使用するコントローラーを自作しました。<br>
                 <a href="https://github.com/kuri227/hackU.git">マイコンのプログラム</a>はこちらから</a></p>
                 <figure>
-                    <image src="images/handmade_gun.png" alt="自作コントローラー" id="handmade_gun">
+                    <image src="images/gun_img/handmade_gun.png" alt="自作コントローラー" id="handmade_gun">
                 <figcaption>自作したコントローラの写真</figcaption>
                 </figure>
             </div>
@@ -152,24 +157,50 @@
                     また、ボールにもHPが存在します。
                     矢をボールに当てることでボールのHPを減らすことができ、ボールのHPを0にすることでボールを消すことができます。<br>
                     ボールに矢を当てる、もしくはボールのHPを0にすることで一定数のスコアを獲得することができます。<br>
-                    <br>
-                    出現したボールをすべて消し、かつ、60秒間生き残れば、ゲームクリアとなります。<br>
+                    出現したボールをすべて消し、かつ、60秒間生き残れば、ゲームクリアとなります。<br><br>
                     <a href="https://github.com/kuri227/Shotting-Pygame.git">ボールを撃ち落とすゲーム</a>はこちらから</a></p>
                 </p>
                 <div class="slider">
                     <div class="slides">
-                        <div class="slide"><img src="images/shooting_ball_start.png" alt="スタート画面"></div>
-                        <div class="slide"><img src="images/shooting_game_play.png" alt="プレイ画面"></div>
-                        <div class="slide"><img src="images/shooting_game_clear.png" alt="クリア画面"></div>
-                        <div class="slide"><img src="images/shooting_game_gameover.png" alt="ゲームオーバー画面"></div>
+                        <div class="slide"><img src="images/shooting_img/shooting_ball_start.png" alt="スタート画面"></div>
+                        <div class="slide"><img src="images/shooting_img/shooting_game_play.png" alt="プレイ画面"></div>
+                        <div class="slide"><img src="images/shooting_img/shooting_game_clear.png" alt="クリア画面"></div>
+                        <div class="slide"><img src="images/shooting_img/shooting_game_gameover.png" alt="ゲームオーバー画面"></div>
                     </div>
-                    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-                    <button class="next" onclick="moveSlide(1)">&#10095;</button>
+                    <button class="prev" onclick="moveSlide1(-1)">&#10094;</button>
+                    <button class="next" onclick="moveSlide1(1)">&#10095;</button>
                 </div>
                 <figcaption>「ボールを撃ち落とすゲーム」の実行例</figcaption>
                 
                 <script src="script.js"></script>
+            </div>
+            
+            <div id="image_viewer">
+                <h3>画像ビューワー</h3>
+                <p>PySide6を用いて、画像ビューワーを作成しました。<br>
+                    このプログラムは、pythonのライブラリであるPySide6を使用して作成されたシンプルな画像ビューワーのアプリケーションです。
+                    ユーザーは画像を読み込み、拡大縮小、回転、保存することができます。<br>
+                    画像の回転は左回転と右回転どちらも可能で、保存時には回転後の画像を保存することができます。<br>
+                    GUIには画像表示エリア、拡大率スライダー、および各種操作ボタンが実装しています。<br>
+                    日本語のファイル名に対応するためのエラーチェックも実装しています。<br>
+                    制作時間: 10時間<br>
+                </p>
+                    <a href="https://github.com/kuri227/image-viewer.git">画像ビューワー</a>はこちらから</a></p>
 
+                <div class="slider">
+                    <div class="slides">
+                        <div class="slide"><img src="images/image-viewer_img/image-viewer01.png" alt="実行画面"></div>
+                        <div class="slide"><img src="images/image-viewer_img/image-viewer02.png" alt="画像を読み込み"></div>
+                        <div class="slide"><img src="images/image-viewer_img/image-viewer03.png" alt="画像の回転"></div>
+                    </div>
+                    <button class="prev" onclick="moveSlide2(-1)">&#10094;</button>
+                    <button class="next" onclick="moveSlide2(1)">&#10095;</button>
+                </div>
+                <figcaption>「画像ビューワー」の実行例</figcaption>
+
+                <script src="script.js"></script>
+            </div>
+                
                 
 
 
